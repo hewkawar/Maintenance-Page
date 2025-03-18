@@ -10,14 +10,14 @@ function App() {
 
   return (
     <div className="w-screen h-screen flex flex-col items-center justify-between">
-      <div className='flex flex-col items-center justify-center h-full'>
+      <div className='flex flex-col items-center justify-center h-full container'>
         <img src={TrafficCone} alt="Traffic Cone" className='w-48 h-48' />
         <div className="flex flex-col justify-center items-center mt-12">
-          <div className='flex items-center justify-center'>
-            <h1 className="text-xl"><span className="font-semibold">{window.location.hostname.toLowerCase()}</span> is under maintenance</h1>
-            <div className='w-4 h-4 bg-yellow-500 ms-3 rounded-full'>
+          <div className='flex items-center justify-center text-center'>
+            <div className='w-4 h-4 bg-yellow-500 me-3 rounded-full'>
               <div className='w-4 h-4 bg-yellow-500 rounded-full animate-ping' />
             </div>
+            <h1 className="text-xl text-wrap truncate"><span className="font-semibold">{window.location.hostname.toLowerCase()}</span> is under maintenance</h1>
           </div>
           <p>See you soon 👋</p>
         </div>
